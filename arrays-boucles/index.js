@@ -39,38 +39,31 @@ for (let i = 0; i <= limit; i++) {
 
 // 06 - Reverse
 
-const sentence = "Hello Konexio !"
+const sentence = "Hello Konexio!"
+const final = [""]
 
-for (let i = ""; i < sentence.length; i++) {
+for (let i = sentence.length; i > -1; i--) {
+    reverse = sentence.charAt(i)
+    final.push(reverse)
     
-    console.log(i)
 }
+console.log(final.join(""))
 
 // 07 - Fizzbuzz
 
-const finish = 100
 
-for (let i = 0; i <= finish; i++) {
-    i = i % 3 === 0 
-    
-    
-    
-    // if (i % 3 === 0) {
-    //     console.log("fizz")
-    // }
+// for (let i = 0; i <= 100; i++) {
 
-    // if (i % 5 === 0) {
-    //     console.log("buzz")
-    // }
-
-    // if (i % 3 === 0 && i % 5 === 0) {
-    //     console.log("flizzbuzz")
-    // } 
-
-    // if (i % 7 === 0) {
-    //     console.log("")
-    // } else {
-    //     console.log(i)
-    // }
-}
+//     if (i % 7 === 0) {
+//         console.log("")
+//     } else if (i % 3 === 0 && i % 5 === 0) {
+//         console.log("flizzbuzz")
+//     } else if (i % 3 === 0) {
+//         console.log("fizz")
+//     } else if (i % 5 === 0) {
+//         console.log("buzz")
+//     } else {
+//         console.log(i)
+//     }
+// }
 
