@@ -67,3 +67,21 @@ console.log(final.join(""))
 //     }
 // }
 
+
+// 08 - While
+
+let totalNew = 0
+let limitNew = 10
+let i = 0
+
+while (i < limitNew) {
+    i += 1
+    totalNew = totalNew + i
+    console.log(totalNew)
+}
+
+// 09 - Sans boucle
+
+const names = ["Walid", "Thomas", "Wade"]
+random = Math.floor((Math.random() * names.length))
+console.log(names[random])
