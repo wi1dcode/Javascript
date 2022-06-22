@@ -85,3 +85,23 @@ while (i < limitNew) {
 const names = ["Walid", "Thomas", "Wade"]
 random = Math.floor((Math.random() * names.length))
 console.log(names[random])
+
+// 10 - Random and max
+
+const table = []
+
+
+for (let i = 0; i < 20; i++) {
+    table[i] = Math.floor(Math.random() * 101);
+}
+
+console.log(table)
+let max = table[0]
+
+for (let i = 0; i < 20; i++) {
+    if (table[i] > max) {
+        max = table[i]
+    }
+}
+console.log(max)
+  
