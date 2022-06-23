@@ -92,7 +92,7 @@ const table = []
 
 
 for (let i = 0; i < 20; i++) {
-    table[i] = Math.floor(Math.random() * 101);
+    table[i] = Math.floor(Math.random() * 101);  
 }
 
 console.log(table)
@@ -105,3 +105,4 @@ for (let i = 0; i < 20; i++) {
 }
 console.log(max)
   
+

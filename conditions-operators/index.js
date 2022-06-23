@@ -71,9 +71,12 @@ switch (month) {
 
 // 07 - Rounded but better
 
-let roundedNumber = 4.6
+let roundedNumber = 4.3
+ 
+// const differenceFlor = roundedNumber - Math.floor(roundedNumber)
+// const differenceCeil = Math.ceil(roundedNumber) - roundedNumber
 
-// if ((roundedNumber - Math.floor(roundedNumber)) < (Math.ceil(roundedNumber) - roundedNumber)) {
+// if (differenceFlor < differenceCeil) {
 //     console.log(Math.floor(roundedNumber))
 // } else {
 //     console.log(Math.ceil(roundedNumber))
@@ -83,11 +86,8 @@ let roundedNumber = 4.6
 
 // roundedNumber = roundedNumber.toString()
 // let index = roundedNumber.indexOf(".")
-// console.log(index)
 // let decimale = roundedNumber.substring(index)
-// console.log(decimale)
 // decimale = parseFloat(decimale)
-// console.log(decimale)
 // if (decimale < 0.5)  {
 //     console.log(Math.floor(roundedNumber))
 // } else {
