@@ -72,11 +72,22 @@ const format = (num) => {
         secondes: 0
     }
     time.heure = Math.floor(num / 3600)
-    let minuteInitiale = Math.floor(num % 3600) 
-    time.minutes = Math.floor(num / 3600)
-    time.secondes = Math.floor(num / 3600)
+    let minuteInitiale = Math.floor(num % 3600)
+    time.minutes = Math.floor(minuteInitiale / 60)
+    time.secondes = Math.floor(minuteInitiale % 60)
     return time
 }
 
-let calcul = format(3700)
+let calcul = format(3333)
 console.log(calcul)
+
+// 07 - Password generation
+
+const generatePassword = (num) => {
+
+    
+
+    if (num < 6 || num > 15) {
+        console.log("Error!")
+    }
+}
