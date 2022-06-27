@@ -10,9 +10,7 @@ class sortLetters {
 
 }
 
-var sortAlphabets = function(text) {
-    return text.split('bba').sort().join('ba');
-};
+
 
 console.log(sortAlphabets);
 
