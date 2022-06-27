@@ -78,16 +78,59 @@ const format = (num) => {
     return time
 }
 
-let calcul = format(3333)
+let calcul = format(5333)
 console.log(calcul)
 
 // 07 - Password generation
 
-const generatePassword = (num) => {
-
+const generatePassword = num => {
+    let password = ""
     
+    for (i = 0; i < num; i++) {
+        const min = 65
+        const max = 90 - 65 + 1
+        const random = Math.floor((Math.random() * max) + min)
+        const letter = String.fromCharCode(random)
 
-    if (num < 6 || num > 15) {
-        console.log("Error!")
+
+        password = password + letter
     }
+
+    console.log(password);
+}
+
+generatePassword(8)
+
+
+
+// 08
+
+const getDiceResult = () => {
+  const min = 1
+  const max = 6
+  const random = Math.floor(Math.random() * max) + min
+
+  return random
+}
+
+const launchDice = numberOfDice => {
+  let total = 0
+
+  for (let i = 0; i < numberOfDice; i++) {
+    const random = getDiceResult()
+    total = total + random
+  }
+
+  return total
+}
+
+const player1 = launchDice(6)
+const player2 = launchDice(3)
+
+if (player1 < player2) {
+  console.log(`Player 2 wins with ${player2}`)
+} else if (player1 > player2) {
+  console.log(`Player 1 wins with ${player1}`)
+} else {
+  console.log("Egalité")
 }
