@@ -1,36 +1,58 @@
+const defaultChannel = 1
+const defaultVolume = 50
+
 class tv {
-    constructor(brand, channel, volume) {
+    constructor(brand) {
         this.brand = brand
         this.channel = 1
         this.volume = 50
     }
 
-
-
-    changeVolume = (volume) => {
-        this.volume = Math.max(Number(0), Math.min(Number(100), Number(volume)));
+    inscreaseVolume = () => {
+        if (this.volume < 100) {
+        this.volume = this.volume + 1
+        }
     }
 
-    changeChannel = (channel) => {
-        this.channel = Math.max(Number(0), Math.min(Number(50), Number(channel)));
-
-    //     if (Math.min(Number(50))) {
-           
-    //     } else {
-    //         this.channel = this.channel === this.channel
-    //     }
+    decreaseVolume = () => {
+        if (this.volume > 0) {
+            this.volume = this.volume - 1
+        }
     }
 
-    reset = (reset) => {
-        this.channel === this.channel
-        this.volume === this.volume
+    changeChannel = num => {
+
+        if (num >= 1 && num <= 50) {
+        this.channel = num
+        }
     }
+
+    reset = () => {
+        this.channel = defaultChannel
+        this.volume = defaultVolume
+    }
+
+    describe = () => {
+        console.log(`Marque: ${this.brand}, channel: ${this.channel}, volume: ${this.volume}`);
+    }
+    
 }
 
-var showTv = new tv('Sony', 2, 99)
-showTv.changeVolume(2)
-showTv.changeChannel(66)
-console.log(showTv);
-console.log(showTv.reset());
+const sony = new tv("Sony")
+sony.describe()
 
-// NOT FINISH
+for (let i = 0; i < 5; i++) {
+    sony.inscreaseVolume()
+}
+sony.describe()
+
+for (let i = 0; i < 10; i++) {
+    sony.decreaseVolume()
+}
+sony.describe()
+
+sony.changeChannel(3)
+sony.describe()
+
+sony.reset()
+sony.describe()

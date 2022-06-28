@@ -4,12 +4,12 @@ class car {
         this.speed = speed
     }
 
-    accelerate = (speed) => {
-        this.speed = speed
+    accelerate = number => {
+        this.speed = this.speed + number 
     }
 
-    brake = (brake) => {
-        this.speed = this.speed - brake
+    brake = number => {
+        this.speed = this.speed - number
     }
 
     describe = () => {
@@ -25,7 +25,7 @@ console.log(ford);
 
 ford.brake(25)
 
-console.log(ford.describe());
+ford.describe();
 
 
 var bmw = new car ("BMW", 0)
@@ -34,6 +34,6 @@ console.log(bmw);
 
 bmw.brake(120)
 
-console.log(bmw.describe());
+bmw.describe();
 
 
