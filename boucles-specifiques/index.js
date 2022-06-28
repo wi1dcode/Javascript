@@ -32,14 +32,24 @@
 
 // ********************** 03 - Filter Numbers **********************
 
-const array = [1, "toto", 34, "javascript", 8] 
+// const array = [1, "toto", 34, "javascript", 8] 
 
-const numbers = array.filter((array) => {
-    if (typeof(array) === "number") {
-        return array
+// const numbers = array.filter((array) => {
+//     if (typeof(array) === "number") {
+//         return array
+//     }
+// })
+
+// console.log(numbers);
+
+// ********************** 04 - Filter Even **********************
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+
+const even = numbers.filter((numbers) => {
+    if (numbers % 2 === 0) {
+        return numbers
     }
 })
 
-console.log(numbers);
-
-// ********************** 04 - Filter Even **********************
+console.log(even);
