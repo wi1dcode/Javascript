@@ -10,3 +10,21 @@ console.log(double);
 
 // 02 - Map Names
 
+const longNames = [
+	{
+		firstName: "Jane",
+		lastName: "Doe"
+	},
+	{
+		firstName: "John",
+		lastName: "Smith"
+	}
+]
+
+const shortNames = longNames.map((longNames) => {
+    const name = `name: ${longNames.firstName} ${longNames.lastName}`
+    return name
+    
+})
+
+console.log(shortNames);
