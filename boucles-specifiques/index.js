@@ -96,6 +96,12 @@
 
 // ********************** 06 - Cake v2 **********************
 
+// const pie = cakes.find((cake) => {
+//     return cake.name === "pie"
+// })
+
+// console.log(pie);
+
 // ********************** 07 - Factorielle forEach **********************
 
 
