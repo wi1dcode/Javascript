@@ -44,12 +44,70 @@
 
 // ********************** 04 - Filter Even **********************
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-const even = numbers.filter((numbers) => {
-    if (numbers % 2 === 0) {
-        return numbers
-    }
+// const even = numbers.filter((numbers) => {
+//     if (numbers % 2 === 0) {
+//         return numbers
+//     }
+// })
+
+// console.log(even);
+
+
+// ********************** 05 - Cakes **********************
+
+const cakes = [
+    [
+        {
+            name: "cake",
+            flavor: "vanilla",
+            status: "available"
+        },
+        {
+            name: "brownie",
+            flavor: "chocolate",
+            status: "available"
+        },
+        {
+            name: "pie",
+            flavor: "strawberry",
+            status: "available"
+        },
+        {
+            name: "muffin",
+            flavor: "pistachio",
+            status: "available"
+        },
+        {
+            name: "donut",
+            flavor: "chocolate",
+            status: "available"
+        },
+    ]
+]
+
+
+// NOT FINISH
+// WILL RESTART
+
+
+// ********************** 06 - Cake v2 **********************
+
+// ********************** 07 - Factorielle forEach **********************
+
+
+const table = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let factorielle = 1
+
+table.forEach((i) => {
+	factorielle = factorielle * (i)
+	return factorielle
+	
 })
 
-console.log(even);
+console.log(factorielle)
+
+// ********************** 08 - Chess board **********************
+
+const = ["x"]
